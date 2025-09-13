@@ -125,46 +125,6 @@ button#calculate-btn:hover {
     box-shadow: 0 8px 20px rgba(149, 125, 173, 0.5);
 }
 
-#result-container {
-    margin-top: 2rem;
-    padding: 1.5rem;
-    background-color: #f9f6ff;
-    border-left: 5px solid var(--primary-purple);
-    border-radius: 8px;
-    transition: opacity 0.5s ease, transform 0.5s ease;
-    opacity: 0;
-    transform: translateY(10px);
-}
-
-#result-container.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-#result-container.hidden {
-    display: none;
-}
-
-#result-container h2 {
-    color: var(--dark-purple);
-    margin-bottom: 1rem;
-}
-
-#result-container p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-}
-
-#bmi-value, #bmi-category {
-    font-weight: 700;
-}
-
-/* BMI Category Colors */
-.underweight { color: #3498db; }
-.normal { color: #2ecc71; }
-.overweight { color: #f39c12; }
-.obese { color: #e74c3c; }
-
 @media (max-width: 768px) {
     .container {
         padding: 2rem 1.5rem;

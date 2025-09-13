@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Fitness Datasheet</title>
+    <title>Fitness Datasheet</title>
     <link rel="stylesheet" href="datasheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
     <div class="container">
         <header>
             <h1>Fitness Datasheet 📊</h1>
-            <p>Enter your workout and personal data to calculate your BMI.</p>
+            <p>Enter your workout and personal data below.</p>
         </header>
 
         <form id="fitness-form">
@@ -96,16 +96,9 @@
                 </div>
             </div>
 
-            <button type="button" id="calculate-btn">Calculate & Analyze ✨</button>
+            <button type="submit" id="calculate-btn">Submit Data</button>
         </form>
-
-        <div id="result-container" class="hidden">
-            <h2>Your Results</h2>
-            <p>Body Mass Index (BMI): <span id="bmi-value"></span></p>
-            <p>Category: <span id="bmi-category"></span></p>
-        </div>
     </div>
 
-    <script src="datasheet.js"></script>
 </body>
 </html>
