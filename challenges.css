@@ -1,14 +1,14 @@
 .challenge-section {
     padding: 80px 0;
     background: linear-gradient(135deg, #f6e9f8 0%, #f9f1f2 100%);
-    color: white;
+    color: black;
 }
 
 .challenge-section h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 15px;
-    color: white;
+    color: black;
 }
 
 .challenge-section > .container > p {
