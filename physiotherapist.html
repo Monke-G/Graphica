@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physiotherapy & Rehabilitation Specialists</title>
+    <link rel="stylesheet" href="physiotherapist.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img src="https://www.apollocradle.com/wp-content/uploads/2021/08/247-logo.png" alt="Apollo 24/7 Logo" class="logo">
+            <h1>Physiotherapy & Rehabilitation</h1>
+            <p>Find experienced specialists to help you on your recovery journey.</p>
+        </header>
+
+        <div class="filters">
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="name-search" placeholder="Search by physician's name...">
+            </div>
+            <div class="location-filter">
+                <i class="fa-solid fa-map-marker-alt"></i>
+                <select id="location-filter">
+                    <option value="all">All Locations</option>
+                    </select>
+            </div>
+        </div>
+
+        <main id="physician-list" class="physician-grid">
+            </main>
+        
+        <div id="no-results" class="no-results-message">
+            <i class="fa-solid fa-user-doctor"></i>
+            <p>No specialists found matching your criteria.</p>
+        </div>
+    </div>
+
+    <script src="physiotherapist.js"></script>
+</body>
+</html>

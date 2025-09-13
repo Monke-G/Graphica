@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Fitness Datasheet</title>
+    <link rel="stylesheet" href="datasheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Fitness Datasheet 📊</h1>
+            <p>Enter your workout and personal data to calculate your BMI.</p>
+        </header>
+
+        <form id="fitness-form">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="age">Age (years)</label>
+                    <input type="number" id="age" name="age" placeholder="e.g., 25" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender" required>
+                        <option value="" disabled selected>Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="weight">Weight (kg)</label>
+                    <input type="number" id="weight" name="weight" placeholder="e.g., 70.5" step="0.1" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="height">Height (m)</label>
+                    <input type="number" id="height" name="height" placeholder="e.g., 1.75" step="0.01" min="0.1" required>
+                </div>
+                 <div class="form-group">
+                    <label for="fat-percentage">Body Fat (%)</label>
+                    <input type="number" id="fat-percentage" name="fat_percentage" placeholder="e.g., 15" min="1" max="100">
+                </div>
+                <div class="form-group">
+                    <label for="experience">Experience Level</label>
+                    <select id="experience" name="experience" required>
+                        <option value="" disabled selected>Select Level</option>
+                        <option value="Beginner">Beginner</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Advanced">Advanced</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="workout-type">Workout Type</label>
+                    <select id="workout-type" name="workout_type" required>
+                        <option value="" disabled selected>Select Workout</option>
+                        <option value="Cardio">Cardio</option>
+                        <option value="Strength">Strength Training</option>
+                        <option value="Yoga">Yoga/Flexibility</option>
+                        <option value="HIIT">HIIT</option>
+                        <option value="CrossFit">CrossFit</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="session-duration">Session Duration (hours)</label>
+                    <input type="number" id="session-duration" name="session_duration" placeholder="e.g., 1.5" step="0.1" min="0">
+                </div>
+                <div class="form-group">
+                    <label for="calories-burned">Calories Burned</label>
+                    <input type="number" id="calories-burned" name="calories_burned" placeholder="e.g., 500" min="0">
+                </div>
+                <div class="form-group">
+                    <label for="water-intake">Water Intake (liters)</label>
+                    <input type="number" id="water-intake" name="water_intake" placeholder="e.g., 2.5" step="0.1" min="0">
+                </div>
+                <div class="form-group">
+                    <label for="workout-frequency">Workout Frequency (days/week)</label>
+                    <input type="number" id="workout-frequency" name="workout_frequency" placeholder="e.g., 4" min="0" max="7">
+                </div>
+                
+                <div class="form-group">
+                    <label for="resting-bpm">Resting BPM</label>
+                    <input type="number" id="resting-bpm" name="resting_bpm" placeholder="e.g., 60" min="0">
+                </div>
+                <div class="form-group">
+                    <label for="avg-bpm">Average BPM (Workout)</label>
+                    <input type="number" id="avg-bpm" name="avg_bpm" placeholder="e.g., 140" min="0">
+                </div>
+                 <div class="form-group">
+                    <label for="max-bpm">Max BPM (Workout)</label>
+                    <input type="number" id="max-bpm" name="max_bpm" placeholder="e.g., 180" min="0">
+                </div>
+            </div>
+
+            <button type="button" id="calculate-btn">Calculate & Analyze ✨</button>
+        </form>
+
+        <div id="result-container" class="hidden">
+            <h2>Your Results</h2>
+            <p>Body Mass Index (BMI): <span id="bmi-value"></span></p>
+            <p>Category: <span id="bmi-category"></span></p>
+        </div>
+    </div>
+
+    <script src="datasheet.js"></script>
+</body>
+</html>
